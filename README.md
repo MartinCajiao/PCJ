@@ -1,5 +1,1 @@
-# Tripleten web_project_around
-
-este proyecto hace uso de html css javascript
-Martin Cajiao
-https://martincajiao.github.io/web_project_around/
+Proyecto desarrollado para una empresa de insumos médicos. El sistema utiliza tarjetas inteligentes administradas mediante una API construida en Python, encargada de procesar y gestionar la información. Todos los datos se almacenan y consultan en una base de datos MySQL desplegada en Railway, garantizando acceso seguro, centralizado y escalable.
