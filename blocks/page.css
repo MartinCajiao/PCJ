@@ -1,0 +1,21 @@
+.page {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+    overflow: hidden;
+
+}
+@media screen and (max-width: 330px) {
+  .page {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+}

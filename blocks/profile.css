@@ -1,0 +1,131 @@
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 880px;
+  margin-bottom: 50px;
+}
+.profile__picture {
+  width: 120px;
+  height: 120px;
+}
+.profile__container-one {
+  display: flex;
+}
+.profile__container-two {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+.profile__button-three {
+  display: flex;
+  flex-direction: row;
+}
+.profile__name {
+  font-family: Inter;
+  font-size: 42px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+  margin: 0 15px 16px 0;
+}
+.profile__profesion {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+}
+.profile__button-one {
+  background: transparent url(../images/EditButton.png);
+  height: 28px;
+  width: 24px;
+  padding-left: 18px;
+  align-self: center;
+}
+.profile__button-one:hover {
+  opacity: 60%;
+}
+.profile__button-two {
+  background: transparent url(../images/AddButton.png);
+  background-repeat: no-repeat;
+  width: 155px;
+  height: 55px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  background-position: center;
+}
+.profile__button-two:hover {
+  opacity: 60%;
+}
+@media screen and (max-width: 768px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    align-items: center;
+    width: 100%;
+  }
+  .profile__picture {
+    width: 120px;
+    height: 120px;
+  }
+  .profile__container-one {
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .profile__container-two {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    max-height: 50px;
+    align-items: center;
+    padding: 0;
+  }
+  .profile__button-three {
+    display: flex;
+    flex-direction: row;
+    max-height: 22px;
+    padding-left: 30px;
+  }
+  .profile__name {
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0;
+    margin: 0 10px 16px 0;
+    width: fit-content;
+  }
+  .profile__profesion {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 14px 0;
+  }
+  .profile__button-one {
+    background: transparent url(../images/EditButton.png);
+    width: 7px;
+    scale: 0.8;
+    padding-left: 18px;
+  }
+  .profile__button-one :hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .profile__button-two {
+    background: transparent url(../images/AddButton.png);
+    background-repeat: no-repeat;
+    width: 282px;
+    height: 55px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    background-position: center;
+    margin: 36px 0;
+  }
+  .profile__button-two :hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+}

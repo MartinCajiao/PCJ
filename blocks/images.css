@@ -1,0 +1,56 @@
+.images 
+{
+ max-width: 816px;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ max-height: 540px;
+}
+.images__container
+{
+ position: fixed;
+ top: 0;
+ left: 0; 
+ z-index: 10;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+.images__pop-up
+{
+ width: 100%;
+ display: none;
+}
+.images__pop-upactive
+{
+display: flex ;
+}
+.images__overlay {
+ position: absolute;
+ background-color: rgba(0, 0, 0, 0.5);
+ opacity: 0.7;
+ width: 100%;
+ height: 100%;
+ min-height: 100vh;
+ top: 0;
+ left: 0;
+ z-index: 5;
+}
+.images__button
+{
+ right: -40px; background: url(../images/closehover.png);
+ width: 40px;
+ height: 40px;
+ background-color: transparent;
+ background-repeat: no-repeat;
+ border: none;
+ position: absolute;
+ top: -30px;
+ right: -40px;
+ z-index: 15;
+}
+.images__text
+{
+font-family: "Inter";
+color: #FFFFFF;
+}

@@ -1,0 +1,23 @@
+.create-pop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: none;
+}
+
+.create-pop__active {
+    display: flex;
+}
+
+.create-pop__overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}

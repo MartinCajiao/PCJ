@@ -1,0 +1,229 @@
+.card {
+  max-width:880px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+  margin: 0 auto;
+  padding: 0%;
+  justify-content: center;
+}
+
+.card__image {
+  width: 100%;
+  height: 282px;
+  object-fit: cover;
+  background-color: black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card__button {
+  width: 21px;
+  height: 19px;
+  background: transparent url(../images/heart.svg);
+  background-repeat: no-repeat;
+  border: none;
+  width: 24px;
+}
+.card__active {
+  width: 24px;
+  height: 19px;
+  background: transparent url(../images/active.svg);
+  background-repeat: no-repeat;
+  border: none;
+}
+.card__title {
+  margin: 0;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 900;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 282px;
+}
+
+.card__container-one {
+  width: 282px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.card__container-two {
+  background-color: white;
+  display: flex;
+  padding: 25px 15px 31px 21px;
+  width: 100%;
+  text-overflow: ellipsis;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  justify-content: space-between;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.card__container-three {
+  width: 282px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 10px 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.card__container-four {
+  width: 282px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 10px 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.card__container-five {
+  width: 282px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 10px 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.card__container-six {
+  width: 282px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 10px 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.card__container-seven {
+  width: 282px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 10px 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+.card__icon-one
+{
+ width: 28px;
+ height: 29px;
+position: absolute;
+ top: 18px;
+ left: 250px;
+ right: 15px;
+ bottom: 244px;
+}
+@media screen and (max-width: 330px) {
+  .card {
+    display: grid;
+    list-style-type: none;
+    grid-gap: 17px;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .card__image {
+    width: 100%;
+    object-fit: cover;
+    background-color: black;
+    border-radius: 10px 10px 0;
+  }
+  .card__button {
+    height: 19px;
+    background: transparent url(../images/heart.svg);
+    background-repeat: no-repeat;
+    border: none;
+  }
+  .card__active {
+    width: 21px;
+    height: 19px;
+    background: transparent url(../images/active.svg);
+    background-repeat: no-repeat;
+    border: none;
+  }
+  .card__title {
+    margin: 0;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  .card__container-one {
+    width: 282px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+
+  .card__container-two {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .card__container-three {
+    width: 282px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+
+  .card__container-four {
+    width: 282px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+
+  .card__container-five {
+    width: 282px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+
+  .card__container-six {
+    width: 282px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+
+  .card__container-seven {
+    width: 282px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+}

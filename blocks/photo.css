@@ -1,0 +1,13 @@
+.photo__container-second
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px;
+}
+.photo__grid
+{
+  width: 400px;
+  height: auto;
+  border-radius: 15px;
+}

@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 880px;
+}
+.footer__copyright {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(84, 84, 84, 1);
+}
+@media screen and (max-width: 330px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+}

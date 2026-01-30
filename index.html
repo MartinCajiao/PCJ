@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="proyecto7" />
+    <meta name="author" content="Martin Cajiao" />
+    <meta name="keywords" content="around html css javascript" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Around the u.s.</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img src="./images/PCJ__LOGO--TWO.png" alt="title" class="header__title" />
+      </header>
+
+      <main class="content">
+        <div class="photo__container-second">
+          <button class="photo__button images__button"></button>
+          <img src="./images/location-photo-one.jpeg" alt="#" class="photo__grid ">
+          <img src="images/location-photo-two.jpeg" alt="#" class="photo__grid ">
+        </div>
+       <div class="location__container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.8748724835843!2d-78.44692638029406!3d-0.3359276802190708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5bce6a097587f%3A0x39e927ca403ba116!2sQuito%20%26%20Antizana%2C%20171103%20Sangolqu%C3%AD!5e0!3m2!1sen!2sec!4v1766150960097!5m2!1sen!2sec" width="600" height="450" style="border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+
+       
+
+
+        <section class="cards">
+          <div class="card">
+            <template id="template">
+              <div class="card__container-one">
+                <img
+                  src="./images/icon__svg--exclamation.svg"
+                  alt="trash can"
+                  class="card__icon-one"
+                />
+                <img src="" alt="" class="card__image" />
+                <div class="card__container-two">
+                  <a class="card__title" href="#"></a>
+                </div>
+              </div>
+            </template>
+          </div>
+        </section>
+      </main>
+
+      <div class="pop-up" id="pop-up-one">
+        <div class="pop-up__overlay"></div>
+        <div class="edit">
+          <button class="form__close"></button>
+          <h3 class="form__title">Editar perfil</h3>
+          <form class="form" id="form2" novalidate>
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Nombre"
+              id="input1"
+              name="input1"
+              required
+              minlength="2"
+              maxlength="40"
+            />
+            <p class="form__text_error" id="input1-error"></p>
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Acerca de mí"
+              id="input2"
+              name="input2"
+              required
+              minlength="2"
+              maxlength="40"
+            />
+            <p class="form__text_error" id="input2-error"></p>
+            <button class="form__create-button" id="submitButton" type="submit">
+              Guardar
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="images__pop-up">
+        <div class="images__overlay"></div>
+        <div class="images__container">
+          <button class="images__button"></button>
+          <img src="" alt="image" class="images" />
+          <p class="images__text"></p>
+        </div>
+      </div>
+
+      <div class="create-pop" id="pop-up-two">
+        <div class="create-pop__overlay"></div>
+        <div class="place">
+          <button type="button" class="form__close" id="close__create"></button>
+          <h3 class="form__title">Nuevo lugar</h3>
+          <form class="form" id="form1" novalidate>
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Título"
+              id="input3"
+              name="name"
+              required
+              minlength="2"
+              maxlength="40"
+            />
+            <p class="form__text_error" id="input3-error"></p>
+            <input
+              type="url"
+              class="form__input"
+              placeholder="Enlace a la imagen"
+              id="input4"
+              name="link"
+              required
+            />
+            <p class="form__text_error" id="input4-error"></p>
+            <button type="submit" class="form__create-button" id="createButton">
+              Crear
+            </button>
+          </form>
+        </div>
+      </div>
+      <button
+        class="chat-open-button"
+        type="button"
+        aria-label="Abrir Chat AI"
+      ></button>
+      <div class="pop-up" id="pop-up-chat">
+        <div class="pop-up__overlay"></div>
+        <div class="chat-box">
+          <button class="form__close" id="close-chat" type="button"></button>
+          <h3 class="form__title">Asistente AI</h3>
+          <div class="chat-messages-container"></div>
+          <form class="form" id="chat-form" novalidate>
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Escribe un mensaje..."
+              name="chatInput"
+              required
+            />
+            <button class="form__create-button" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="pop-up" id="pop-up-policy">
+        <div class="pop-up__overlay"></div>
+        <div class="edit">
+          <button class="form__close" type="button"></button>
+          <h3 class="form__title">Política de Empresa</h3>
+          <div class="policy__container">
+            <p>
+              Al comprar equipos y repuestos de marcas como Gima y Medela, el
+              comprador reconoce que dichos productos
+              <strong
+                >no cuentan con registro sanitario FDA ni de otras entidades
+                regulatorias</strong
+              >
+              y que su uso es bajo su exclusiva responsabilidad. Nuestra empresa
+              <strong>no es partner oficial</strong> de las marcas mencionadas;
+              vendemos únicamente equipos, repuestos y servicios de
+              mantenimiento. Todos los equipos cuentan con
+              <strong>garantía de fábrica</strong>, según las condiciones del
+              fabricante, pero
+              <strong
+                >no nos hacemos responsables por daños, lesiones o problemas
+                derivados de un uso indebido, negligente o inapropiado del
+                equipo</strong
+              >. Al continuar con la compra, el comprador
+              <strong>declara haber leído, entendido y aceptado</strong> estos
+              términos; si no está de acuerdo, debe abstenerse de realizar la
+              compra.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p class="footer__copyright">Recuerda si no encuentras lo que buscas escribenos a whatsapp</p>
+      </footer>
+    </div>
+    <script src="./scripts/index.js" type="module"></script>
+  </body>
+</html>

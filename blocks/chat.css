@@ -1,0 +1,100 @@
+/* --- 1. EL BOTÓN FLOTANTE --- */
+.chat-open-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999; /* Para que esté por encima de las cards */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px;
+  transition: transform 0.2s ease;
+}
+
+.chat-open-button:hover {
+  transform: scale(1.1);
+}
+
+/* --- 2. LA CAJA BLANCA (CHAT-BOX) --- */
+/* Usamos esta clase para resetear el diseño que heredaría de .edit */
+.chat-box {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 430px;
+  max-width: 90%;
+  min-height: 500px;
+  padding: 34px 36px;
+  position: relative;
+  z-index: 10;
+  margin: auto; /* Centrado automático dentro del pop-up display: flex */
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* --- 3. CONTENEDOR DE MENSAJES (DONDE RECIBES LA RESPUESTA) --- */
+.chat-messages-container {
+  flex-grow: 1; /* Esto hace que el área de mensajes ocupe todo el espacio */
+  height: 300px; 
+  overflow-y: auto; /* Permite scroll si la IA escribe mucho */
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-right: 10px;
+}
+
+/* Scrollbar elegante para el contenedor */
+.chat-messages-container::-webkit-scrollbar {
+  width: 5px;
+}
+.chat-messages-container::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 10px;
+}
+
+/* --- 4. LOS MENSAJES (BURBUJAS) --- */
+.message {
+  max-width: 85%;
+  padding: 10px 15px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  border-radius: 15px;
+  word-wrap: break-word;
+}
+
+.message_type_user {
+  align-self: flex-end;
+  background-color: #000;
+  color: #fff;
+  border-bottom-right-radius: 2px;
+}
+
+.message_type_bot {
+  align-self: flex-start;
+  background-color: #e1e1e1;
+  color: #000;
+  border-bottom-left-radius: 2px;
+}
+
+/* --- 5. AJUSTES DEL FORMULARIO DEL CHAT --- */
+#chat-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto; /* Se pega al fondo de la chat-box */
+}
+
+/* Para que el input no sea tan ancho como en el perfil */
+#chat-form .form__input {
+  width: 100%;
+  min-height: auto;
+  padding: 8px 0;
+}
